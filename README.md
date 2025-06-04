@@ -6,8 +6,8 @@
   <title>My Research Paper</title>
 </head>
 <body>
-  <h1>Title of My Research</h1>
-  <p>Author: Your Name</p>
+  <h1>WSN</h1>
+  <p>Author: Soham Anand Kulkarni</p>
   <p><a href="paper.pdf" download>Download the Full Paper (PDF)</a></p>
 </body>
 </html>
