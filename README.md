@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Research Paper</title>
+  <title>WSN</title>
 </head>
 <body>
   <h1>WSN</h1>
