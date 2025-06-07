@@ -1,17 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Research Papers</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Soham Kulkarni – Research Papers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #dbeafe, #e0f2fe);
+      color: #111827;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .paper-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .paper-card {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      transition: transform 0.2s ease;
+    }
+
+    .paper-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .paper-title {
+      font-weight: 600;
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .paper-meta {
+      font-size: 0.95rem;
+      color: #374151;
+      margin-bottom: 1rem;
+    }
+
+    .pdf-link {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #2563eb;
+      color: #ffffff;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: background-color 0.2s ease;
+    }
+
+    .pdf-link:hover {
+      background-color: #1d4ed8;
+    }
+  </style>
 </head>
 <body>
-  <h1>Research Papers by Soham Kulkarni</h1>
 
-  <h2>1. Title of Your Paper</h2>
-  <p><strong>Authors:</strong> Soham Kulkarni, Collaborators</p>
-  <p><strong>Published in:</strong> Conference/Journal Name, Year</p>
-  <p>
-    📄 <a href="Precision_Agriculture_Paper.pdf">Download Full Paper (PDF)</a>
-  </p>
+  <h1>Soham Kulkarni – Research Papers</h1>
+
+  <div class="paper-list">
+
+    <div class="paper-card">
+      <div class="paper-title">Optimizing Neural Network Efficiency with Hybrid Architectures</div>
+      <div class="paper-meta">
+        Soham Kulkarni, Jane Doe<br>
+        Presented at: International Conference on AI Research, 2024
+      </div>
+      <a class="pdf-link" href="Precision_Agriculture_Paper.pdf" target="_blank">📄 View PDF</a>
+    </div>
+
+    <!-- Add more papers here like this: -->
+    <!--
+    <div class="paper-card">
+      <div class="paper-title">Your Second Paper Title</div>
+      <div class="paper-meta">
+        Author Name(s)<br>
+        Journal or Conference Name, Year
+      </div>
+      <a class="pdf-link" href="YourSecondPaper.pdf" target="_blank">📄 View PDF</a>
+    </div>
+    -->
+
+  </div>
 
 </body>
 </html>
