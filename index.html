@@ -1,104 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Soham Kulkarni – Research Papers</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(to right, #dbeafe, #e0f2fe);
-      color: #111827;
+      background: linear-gradient(135deg, #f0f9ff, #dbeafe, #e0f2fe);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #1e293b;
       padding: 2rem;
     }
 
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
     h1 {
+      font-family: 'Playfair Display', serif;
       text-align: center;
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-bottom: 2rem;
+      color: #0f172a;
     }
 
-    
-    .paper-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      max-width: 1000px;
+    .paper-container {
+      max-width: 900px;
       margin: 0 auto;
-    }
-
-    .paper-card {
-      background: #ffffff;
-      border-radius: 16px;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-      padding: 1.5rem;
-      transition: transform 0.2s ease;
-    }
-
-    .paper-card:hover {
-      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.75);
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(8px);
     }
 
     .paper-title {
+      font-size: 1.8rem;
       font-weight: 600;
-      font-size: 1.25rem;
       margin-bottom: 0.5rem;
+      color: #1e40af;
     }
 
     .paper-meta {
-      font-size: 0.95rem;
-      color: #374151;
+      font-size: 1rem;
+      color: #475569;
       margin-bottom: 1rem;
     }
 
-    .pdf-link {
-      display: inline-block;
-      text-decoration: none;
-      background-color: #2563eb;
-      color: #ffffff;
-      padding: 0.5rem 1rem;
-      border-radius: 8px;
-      transition: background-color 0.2s ease;
+    .abstract-section {
+      margin-top: 1.5rem;
     }
 
-    .pdf-link:hover {
-      background-color: #1d4ed8;
+    .abstract-toggle {
+      background-color: #3b82f6;
+      color: #fff;
+      border: none;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .abstract-toggle:hover {
+      background-color: #2563eb;
+    }
+
+    .abstract-content {
+      display: none;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #1e293b;
+      background: #f9fafb;
+      padding: 1rem;
+      border-left: 4px solid #3b82f6;
+      border-radius: 8px;
+    }
+
+    .pdf-button {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.25rem;
+      background: #1d4ed8;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .pdf-button:hover {
+      background: #1e40af;
+    }
+
+    @media (max-width: 600px) {
+      .paper-title {
+        font-size: 1.5rem;
+      }
+      .abstract-toggle, .pdf-button {
+        width: 100%;
+        text-align: center;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>Soham Kulkarni – Research Papers</h1>
+  <h1>Research Papers – Soham Kulkarni</h1>
 
-  <div class="paper-list">
-
-    <div class="paper-card">
-      <div class="paper-title">Precision Agriculture using Rechargeable Harvest Batteries and Wireless Sensor Nodes (2025)</div>
-      <div class="paper-meta">
-        Soham Kulkarni<br><br>
-       Abstract <br>
-In the face of rising global food insecurity and the increasing need for sustainable agricultural practices, this research explores the integration of wireless sensor networks (WSNs), renewable energy, and rechargeable battery systems in precision agriculture. Combining simulations in MATLAB and real-world sensor deployments using Raspberry Pi, the project focuses on smart irrigation, energy harvesting strategies, and efficient wireless communication using technologies like LoRaWAN. It also models environmental effects like log-normal shadowing and applies Markov models to assess sensor node behavior. This work contributes toward scalable, sustainable, and data-driven agriculture solutions for the future.
-
-
-      </div>
-      <a class="pdf-link" href="Precision_Agriculture_Paper.pdf" target="_blank">📄 View PDF</a>
+  <div class="paper-container">
+    <div class="paper-title">Precision Agriculture using Rechargeable Harvest Batteries and Wireless Sensor Nodes (2025)</div>
+    <div class="paper-meta">
+      <strong>Author:</strong> Soham Kulkarni<br>
+      <strong>Published in:</strong> Independent Research, 2025
     </div>
 
-    <!-- Add more papers here like this: -->
-    <!--
-    <div class="paper-card">
-      <div class="paper-title">Your Second Paper Title</div>
-      <div class="paper-meta">
-        Author Name(s)<br>
-        Journal or Conference Name, Year
+    <div class="abstract-section">
+      <button class="abstract-toggle" onclick="toggleAbstract()">📄 Show Abstract</button>
+      <div class="abstract-content" id="abstract">
+        In the face of rising global food insecurity and the increasing need for sustainable agricultural practices, this research explores the integration of wireless sensor networks (WSNs), renewable energy, and rechargeable battery systems in precision agriculture. Combining simulations in MATLAB and real-world sensor deployments using Raspberry Pi, the project focuses on smart irrigation, energy harvesting strategies, and efficient wireless communication using technologies like LoRaWAN. It also models environmental effects like log-normal shadowing and applies Markov models to assess sensor node behavior. This work contributes toward scalable, sustainable, and data-driven agriculture solutions for the future.
       </div>
-      <a class="pdf-link" href="YourSecondPaper.pdf" target="_blank">📄 View PDF</a>
     </div>
-    -->
 
+    <a class="pdf-button" href="PrecisionAgriculture.pdf" target="_blank">📥 Download Full Paper (PDF)</a>
   </div>
+
+  <script>
+    function toggleAbstract() {
+      const abs = document.getElementById('abstract');
+      const btn = document.querySelector('.abstract-toggle');
+      if (abs.style.display === 'block') {
+        abs.style.display = 'none';
+        btn.textContent = '📄 Show Abstract';
+      } else {
+        abs.style.display = 'block';
+        btn.textContent = '📄 Hide Abstract';
+      }
+    }
+  </script>
 
 </body>
 </html>
